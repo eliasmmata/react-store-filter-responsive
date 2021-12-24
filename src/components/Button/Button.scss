@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.button-main {
+    color: $white;
+    background-color: $blueMain;
+    border: 1px solid $blueMain;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    display: flex;
+    margin: 1.25rem auto 0.5rem auto;
+}
+
+
+
+

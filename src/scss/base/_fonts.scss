@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Mayoral';
+  src: local('Gilroy'),
+       url('/fonts/Branding-Pro-Regular.otf') format('otf'),
+}
+@font-face {
+  font-family: "Mayoral-Light";
+  src: local("Mayoral-Light"),
+  url("/fonts/Branding-Pro-Light.otf") format("otf");
+}
+@font-face {
+  font-family: "Mayoral-Bold";
+  src: local("Mayoral-Bold"),
+  url("/fonts/Branding-Pro-Bold.otf") format("otf");
+}
+
+
+$mainFont: 'Mayoral', sans-serif;
+$lightFont: 'Mayoral-Light', sans-serif;
+$boldFont: 'Mayoral-Bold', sans-serif;
