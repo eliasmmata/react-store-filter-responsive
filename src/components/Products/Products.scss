@@ -70,8 +70,9 @@
         & .product-card__palette {
             display: flex;
             justify-content: space-evenly;
-            & :before {
+            & span {
                 content: '';
+                border: 1px solid black;
                 display: inline-block;
                 width: 15px;
                 height: 15px;
@@ -151,8 +152,9 @@
         & .product-card__palette {
             display: flex;
             justify-content: space-evenly;
-            & :before {
+            & span {
                 content: '';
+                border: 1px solid black;
                 display: inline-block;
                 width: 15px;
                 height: 15px;

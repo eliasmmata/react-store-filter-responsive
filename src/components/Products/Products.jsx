@@ -145,20 +145,8 @@ const Products = () => {
     const changeColumns = () => {
         setActive(!isActive);
 
-        
+
     };
-
-    const Colours = () => {
-        for(let product of products) {
-           console.log(product.colors);
-           if(product.colors === 'black') {
-            var color = document.getElementsByTagName('li');
-            color.style.border = '5px solid red';
-
-           }
-        }
-    }
-    Colours()
 
     return (
         <>
@@ -191,9 +179,13 @@ const Products = () => {
                                     <p className="product-card__colors">más colores</p>
                                     <ul className="product-card__palette">{product.colors.map((color, i) => {
                                         return (
-                                            <li key={JSON.stringify(i)}>{color}</li>
+                                            <li key={JSON.stringify(i)} style={color === 'white' ? { color: 'white', textShadow: '-1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.6)' } : { color: color }} >
+                                                <span style={{ backgroundColor: color }}></span>
+                                                {color}
+                                            </li>
                                         )
-                                    })}</ul>
+                                    })}
+                                    </ul>
                                 </>
                                 : null
                             }
