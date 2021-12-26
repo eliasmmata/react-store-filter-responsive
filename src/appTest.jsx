@@ -40,7 +40,18 @@ function App() {
             if (searchProduct === "") {
               return null
             } else if (product.name.toLowerCase().includes(searchProduct.toLowerCase())) {
-              return <Product />
+              let wordsInString = product.name.split(" ");
+              console.log(typeof wordsInString)
+              console.log(wordsInString)
+              
+              for (let i = 0; i < wordsInString.length; i++) {
+                let word = wordsInString[i]
+                if(searchProduct.match('/' + /granate/ + '/g'))  {
+                  return product;
+                }
+                // console.log(typeof word)
+            }
+              return product;
             } else {
               console.log(('no hay resultados'));
             }

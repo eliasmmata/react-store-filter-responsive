@@ -152,7 +152,7 @@ const Products = () => {
                 <i className="pi pi-th-large" onClick={changeColumns} style={{ 'fontSize': '2em' }}></i>
                 <p className="text-columns" onClick={changeColumns}> ( Pulsar para cambiar vista columnas )</p>
             </div>
-            <h1 style={{margin:'0', color: 'black'}}>Polos ({products.length})</h1>
+            <h2>Polos ({products.length} resultados)</h2>
             <div className={isActive ? "product-card-container" : "product-card-container-two"}>
                 {products.map((product) => {
                     return (

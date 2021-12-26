@@ -50,9 +50,15 @@
         left: 1rem;
         color: $greyLight;
         }
+        & .pi.pi-backward {
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
     }
     & .p-input-icon-left > .p-inputtext {
         padding-left: 2.5rem;
+        color: $black;
     }
     & input {
         color: $greyLight;
