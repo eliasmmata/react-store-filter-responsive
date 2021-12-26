@@ -144,8 +144,6 @@ const Products = () => {
     const [isActive, setActive] = useState("false");
     const changeColumns = () => {
         setActive(!isActive);
-
-
     };
 
     return (
@@ -154,7 +152,7 @@ const Products = () => {
                 <i className="pi pi-th-large" onClick={changeColumns} style={{ 'fontSize': '2em' }}></i>
                 <p className="text-columns" onClick={changeColumns}> ( Pulsar para cambiar vista columnas )</p>
             </div>
-
+            <h1 style={{margin:'0', color: 'black'}}>Polos ({products.length})</h1>
             <div className={isActive ? "product-card-container" : "product-card-container-two"}>
                 {products.map((product) => {
                     return (
@@ -179,17 +177,29 @@ const Products = () => {
                                     <p className="product-card__colors">más colores</p>
                                     <ul className="product-card__palette">{product.colors.map((color, i) => {
                                         return (
-                                            <li key={JSON.stringify(i)} style={color === 'white' ? { color: 'white', textShadow: '-1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.6)' } : { color: color }} >
+                                            <li key={JSON.stringify(i)} 
+                                                style={color === 'white' 
+                                                    ? { color: 'white', textShadow: '-1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.6)' } 
+                                                    : { color: color , textShadow: '-1px -1px 1px rgba(255, 255, 255, 0.2), 1px 1px 1px rgba(0, 0, 0, 0.1)'  }} >
                                                 <span style={{ backgroundColor: color }}></span>
-                                                {color}
+                                                {color
+                                                .replace(/white/g, 'blanco')
+                                                .replace(/black/g, 'negro')
+                                                .replace(/blue/g, 'azul')
+                                                .replace(/green/g, 'verde')
+                                                .replace(/red/g, 'rojo')
+                                                }
                                             </li>
                                         )
                                     })}
                                     </ul>
                                 </>
-                                : null
+                                : <p className="product-card__colors">
+                                    Sólo disponible en {product.colors[0].replace(/white/g, 'blanco')
+                                    
+                                    }
+                                    </p>
                             }
-
                             <ButtonMain />
                         </div>
                     );
