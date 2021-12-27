@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c2732cdf.css",
+    "main.js": "/static/js/main.3f0b964f.js",
+    "static/js/787.0f3afcf0.chunk.js": "/static/js/787.0f3afcf0.chunk.js",
+    "static/media/primeicons.svg": "/static/media/primeicons.c6e2053303524e39530c.svg",
+    "static/media/primeicons.eot": "/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
+    "static/media/primeicons.woff": "/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
+    "static/media/primeicons.ttf": "/static/media/primeicons.91bacab1f083f2795272.ttf",
+    "static/media/Branding-Pro-Light.otf": "/static/media/Branding-Pro-Light.bdaa2baad00e3e589d49.otf",
+    "static/media/Branding-Pro-Bold.otf": "/static/media/Branding-Pro-Bold.a0517e734fb056dafae3.otf",
+    "static/media/Branding-Pro-Regular.otf": "/static/media/Branding-Pro-Regular.c63621e474374140af3f.otf",
+    "index.html": "/index.html",
+    "main.c2732cdf.css.map": "/static/css/main.c2732cdf.css.map",
+    "main.3f0b964f.js.map": "/static/js/main.3f0b964f.js.map",
+    "787.0f3afcf0.chunk.js.map": "/static/js/787.0f3afcf0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2732cdf.css",
+    "static/js/main.3f0b964f.js"
+  ]
+}
