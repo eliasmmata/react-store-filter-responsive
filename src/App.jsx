@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000)
+    }, 1000)
   }, []);
 
   // filtro producto
@@ -49,6 +49,7 @@ function App() {
                     value={searchProduct}
                     onChange={event => {
                       setSearchProduct(event.target.value);
+                    
                     }}
                   />
                   <i className="pi pi-backward" onClick={resetInputField}></i>
@@ -60,6 +61,17 @@ function App() {
                   products.filter((product, i) => {
                     if (searchProduct === "") {
                       return null
+                    } else if(searchProduct.length > 5) {
+                      console.log(searchProduct.length)
+                      let str = product.name.split(" ");
+                      console.log(str)
+                      for(var word of str) {
+                        console.log(word)
+                        if(searchProduct.includes(word)) {
+                          console.log('hay palabra')
+                          return product;
+                        }
+                      }
                     } else if (product.name.toLowerCase().includes(searchProduct.toLowerCase())) {
                       return product;
                     }
@@ -67,7 +79,6 @@ function App() {
                       console.log(('no hay resultados'));
                     }
                   }).map((product, key) => {
-                    console.log(key)
                     return (
                       <>
                         <div key={key} className="product-card-filtered">
