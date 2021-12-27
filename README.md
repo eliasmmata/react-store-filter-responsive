@@ -2,9 +2,11 @@
 
 ## Watch in heroku
 
-https://filter-react.herokuapp.com/
+https://filter-react.herokuapp.com/ (not updated reached limit)
 
 Filter by product static JSON.
+
+Works better with speficic word.
 
 Reset filter icon.
 

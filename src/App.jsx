@@ -60,10 +60,15 @@ function App() {
                 products.filter((product, i) => {
                   var results = product.name.split(" ");
                   console.log(searchProduct);
+                  console.log(typeof searchProduct);
                   if (searchProduct === "") {
                     return null
-                  } else if (product.name.toLowerCase().includes(searchProduct.toLowerCase()) || results.some(v => searchProduct.includes(v))) {
+                  } else if (product.name.toLowerCase().includes(searchProduct.toLowerCase()) || results.some(word => searchProduct.includes(word))) {
+                    console.log('match1')
                     return product;
+                  } else if (results.reduce((a, c) => a + searchProduct.includes(c), 0) >= 2) {
+                    console.log('match2')
+                    return product
                   } else {
                     console.log("sin resultados");
                   }
