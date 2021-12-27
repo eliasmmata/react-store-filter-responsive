@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Filter product with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Watch in heroku
+
+https://filter-react.herokuapp.com/
+
+Filter by product static JSON.
+
+Reset filter icon.
+
+Show Colors in product card if they are more availables.
+
+Change columns view.
+
+Preloader.
+
+Scss..
 
 ## Available Scripts
 
