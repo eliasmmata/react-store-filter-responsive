@@ -21,7 +21,7 @@ export const products = [
         "colors": [
             "black",
             "white",
-            "blue"
+            "goldenrod"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/polo-bandas-nino_id_11-55120-700-M-4.JPG?v=20210729043620"
     },

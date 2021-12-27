@@ -188,6 +188,7 @@ const Products = () => {
                                                 .replace(/blue/g, 'azul')
                                                 .replace(/green/g, 'verde')
                                                 .replace(/red/g, 'rojo')
+                                                .replace(/goldenrod/g, 'amarillo')
                                                 }
                                             </li>
                                         )
