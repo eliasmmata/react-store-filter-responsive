@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c2732cdf.css",
-    "main.js": "/static/js/main.3f0b964f.js",
+    "main.js": "/static/js/main.550d0fd8.js",
     "static/js/787.0f3afcf0.chunk.js": "/static/js/787.0f3afcf0.chunk.js",
     "static/media/primeicons.svg": "/static/media/primeicons.c6e2053303524e39530c.svg",
     "static/media/primeicons.eot": "/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
@@ -12,11 +12,11 @@
     "static/media/Branding-Pro-Regular.otf": "/static/media/Branding-Pro-Regular.c63621e474374140af3f.otf",
     "index.html": "/index.html",
     "main.c2732cdf.css.map": "/static/css/main.c2732cdf.css.map",
-    "main.3f0b964f.js.map": "/static/js/main.3f0b964f.js.map",
+    "main.550d0fd8.js.map": "/static/js/main.550d0fd8.js.map",
     "787.0f3afcf0.chunk.js.map": "/static/js/787.0f3afcf0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2732cdf.css",
-    "static/js/main.3f0b964f.js"
+    "static/js/main.550d0fd8.js"
   ]
 }
